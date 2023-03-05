@@ -22,7 +22,7 @@ const Drawer = ({ onClose, onRemove, items = [], opened }) => {
           <img
             onClick={onClose}
             className="cu-p removeBtn"
-            src="/img/btn-remove.svg"
+            src="img/btn-remove.svg"
             alt="remove"
           />
         </h2>
