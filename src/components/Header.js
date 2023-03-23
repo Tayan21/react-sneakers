@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { AppContext } from "../App";
 
 const Header = (props) => {
@@ -26,7 +26,7 @@ const Header = (props) => {
               onClick={props.onClickCart}
               width={18}
               height={18}
-              src="/img/cart.svg"
+              src="img/cart.svg"
               alt="cart"
             />
             <span>{totalPrice}тг</span>
@@ -36,19 +36,18 @@ const Header = (props) => {
               <img
                 width={18}
                 height={18}
-                src="/img/favorite.svg"
+                src="img/favorite.svg"
                 alt="favorite"
               />
             </Link>
           </li>
           <li>
             <Link to="/orders">
-              <img width={18} height={18} src="/img/user.svg" alt="user" />
+              <img width={18} height={18} src="img/user.svg" alt="user" />
             </Link>
           </li>
         </ul>
       </header>
-      <Outlet />
     </>
   );
 };
