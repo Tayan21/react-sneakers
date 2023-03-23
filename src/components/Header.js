@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { AppContext } from "../App";
 
 const Header = (props) => {
@@ -48,6 +48,7 @@ const Header = (props) => {
           </li>
         </ul>
       </header>
+      <Outlet />
     </>
   );
 };
